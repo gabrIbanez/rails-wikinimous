@@ -1,0 +1,9 @@
+
+<% @articles.each do |article|  %>
+  <div class="row">
+    <div class="jumbotron col-sm-3">
+      <h2><%= article.title %></h2>
+      <p><%= article.content %></p>
+    </div>
+  </div>
+<% end %>
