@@ -1,8 +1,13 @@
-<div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-  <div class="card-category">Popular</div>
-  <div class="card-description">
-    <h2><%= @article.title %></h2>
-    <p><%= @article.content %></p>
+<div class="container">
+  <div class="jumbtron">
+    <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/random');">
+      <div class="card-category">Popular</div>
+      <div class="card-description">
+        <h2><%= @article.title %></h2>
+        <p><%= @article.content %></p>
+      </div>
+      <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/random">
+    </div>
+    <div class="btn btn-info"><%= link_to "Retour à l'Acceuil", articles_path %></div>
   </div>
-  <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
 </div>
